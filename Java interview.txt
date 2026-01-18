@@ -1,0 +1,99 @@
+✅ Since we are not storing anything in the variables of the BinaryToDecimal class 
+that needs to be accessed, we declare binaryToDecimal as a static method 
+so it can be called directly from main() without creating an object.
+
+✅ all static methods are declared in the same general way in Java
+
+✅When to use static methods:
+Use a static method when:
+
+The method doesn't depend on instance (object) variables.
+
+You want to call it without creating an object.
+
+It's a utility/helper function like math operations, conversions, etc.
+
+✅ Why is main static?
+Because Java starts the program without creating any object of your class.
+
+So, the main method has to be static so the Java Virtual Machine (JVM) can call it directly using the class name — without creating an object first.
+
+🧠 Think of it like this:
+static means: "This belongs to the class, not to any object."
+
+When the program starts, no object exists yet, so the JVM needs something it can access directly.
+
+That’s why Java says: “Make main static so I (JVM) can run it right away!”
+
+🔁 If main was not static?
+Java wouldn’t know how to start your program because it would need an object — but there's no object created yet!
+
+✅ Java requires the class name to match the file name so the JVM can find and load the correct class and run main() without creating an object.
+This works because main is static, and static methods belong to the class — not to any object.
+🔁 If class name ≠ file name (and class is public):
+You’ll get a compile-time error
+
+✅A .class file is created when you compile your code because Java first translates your code into bytecode, which the JVM can then execute.
+
+🧾 Why is a .class file created when you run a Java program?
+Because Java is a compiled language — meaning your .java file (which you write) is first compiled into a .class file (which the computer runs).
+
+🔍 Here's what happens step-by-step:
+You write Java code
+File: Hello.java
+
+You compile it using javac Hello.java
+➤ This creates a file: Hello.class
+
+You run it using java Hello
+➤ The JVM reads the Hello.class file and starts from the main() method.
+
+🧠 What is a .class file?
+It contains bytecode — a special set of instructions that the Java Virtual Machine (JVM) understands.
+
+Bytecode is not human-readable, but the JVM can execute it on any platform (Windows, Linux, Mac, etc.).
+
+That’s why Java is called "platform independent" — you write code once, compile to bytecode, and it runs anywhere JVM is installed!
+
+
+🔍 Line:
+public static void main(String args[])
+
+Let’s break it down word by word:
+
+1. public
+This is an access modifier.
+
+It means this method is accessible from anywhere — including by the Java Virtual Machine (JVM) when it starts your program.
+
+2. static
+It means this method belongs to the class, not to any object.
+
+So, JVM can call it without creating an object of the class.
+
+3. void
+This means the method does not return anything.
+
+It just runs code, but it doesn't give back a result.
+
+4. main
+This is the name of the method.
+
+It is special: JVM looks for this exact method to start your program
+
+5. String args[]
+This is a parameter: it’s an array of Strings.
+
+It holds command-line arguments (if you give any when running the program).
+
+Note : 
+Command-line Arguments
+You provide them when you run the program.
+
+They're passed via the terminal or command prompt.
+
+They're stored in the String args[] array. Also difference between user input and command line arguments
+
+---------------------------------------------------------------------------------------------------------
+how many bits does each datatype store
+

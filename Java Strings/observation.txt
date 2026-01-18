@@ -1,0 +1,23 @@
+ch - '0'
+This converts the character ch (like '5') to the integer 5 by subtracting '0'
+
+💡 Example to Visualize:
+char ch = '5';
+int digit = ch - '0';  // '5' (ASCII 53) - '0' (ASCII 48) = 5
+
+🤔 Why i + 1?
+Because in Java, substring(start, end) takes characters from:
+
+start index (included) to end index (excluded)
+So to include character at index i, you must go 1 beyond it → i + 1.
+
+----------------------------------------------------------------------------------------------------------
+ s.trim()
+Removes leading and trailing spaces from the string s.
+
+Example:
+If s = " hello world ", then s.trim() becomes "hello world".
+
+FIND : handy list of Java functions and regex patterns commonly used to remove whitespace, alphanumeric characters, or digits from a string
+---------------------------------------------------------------------------------------
+

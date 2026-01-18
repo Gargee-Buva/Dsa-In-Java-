@@ -1,0 +1,15 @@
+👉array can be sorted in O(n) time complexity wiyh single pass(only one loop used)
+👉for this we use three pointers low , mid , high 
+
+🧶 0's -> 0 to low -1
+🧶 1's -> low to mid -1 
+🧶 2's -> high+1 to n-1
+🧶The unsorted part lies within mid to high 
+
+👉As we proceed unsorted part will be shorten and sorted part will grow
+
+👉until mid<=high we continue the loop but when mid = high that means we do not have
+any unsorted element left within the array
+
+trial :-
+0000 1111 [] 2222

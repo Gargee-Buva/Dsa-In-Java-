@@ -1,0 +1,3 @@
+✅ whenever you're working with large arrays or writing code for interviews, competitive programming, or real applications, it's best practice to always use this formula to find the mid:
+
+mid = left + (right - left) / 2;

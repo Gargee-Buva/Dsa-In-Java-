@@ -12,14 +12,10 @@ public int findLargest(int[] nums) {
         return max;
 }
 
-
     public static void main (String[] args) {
     LargestElement obj = new LargestElement();
     int[] nums = {3, 5, 1, 8, 4};
     System.out.println("Largest element: " + obj.findLargest(nums)); 
     }
 }
-
-
-
 

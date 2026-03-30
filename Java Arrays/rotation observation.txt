@@ -33,3 +33,4 @@ Example:
 🎯 Key Insight
 
 Rotating by k is same as rotating by k % n
+% n gives you the extra steps after full rotations

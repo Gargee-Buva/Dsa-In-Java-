@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SortedAndRotated {
+public class SortedAndRotatedQ1752 {
 
     public boolean check(int[] nums) {
         int count = 0;
@@ -27,7 +27,7 @@ public class SortedAndRotated {
         nums[i] = sc.nextInt();
         }
         
-        SortedAndRotated obj = new SortedAndRotated();
+        SortedAndRotatedQ1752 obj = new SortedAndRotatedQ1752();
 
         boolean result = obj.check(nums);
 

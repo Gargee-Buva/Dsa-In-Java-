@@ -1,0 +1,31 @@
+How do we know array is sorted?
+
+👉 Because:
+
+0 drops → already sorted
+1 drop → sorted + rotated
+>1 drops → not sorted
+
+🔥 Simple mental model
+
+Think like this:
+
+“A sorted structure can only break once when rotated.”
+
+EXAMPLE :-
+[1,2,3,4,5]
+👉 has 0 drops
+
+A rotated version like:
+
+[3,4,5,1,2]
+👉 has exactly 1 drop
+
+❌ If it's NOT sorted originally
+
+Example:
+[3,1,4,2]
+
+3 > 1 ❌
+4 > 2 ❌
+👉 2 drops → impossible to come from sorted array

@@ -8,7 +8,7 @@ public boolean check(int [] nums) {
     int count = 0;
     int n = nums.length;
     for(int i=0;i<n;i++) {
-        if(nums[i] > nums[(i+1) % n]) {
+        if(nums[i] > nums[(i+1) % n]) { // (i+1) % n ensures circular comparison → last element compares with first
             count ++;
         }
         if (count > 1) {

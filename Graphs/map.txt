@@ -1,0 +1,19 @@
+when the nodes given are following the zero based indexing :-
+follow the Graph.java file.  
+
+when the nodes given are not following the zero based indexing we use the below approach to create a map:-
+
+🔥 Decision rule (this is what you should remember)
+
+Ask yourself:
+
+“Are nodes continuous?”
+
+Nodes		What to do
+1,2,3,4		subtract 1
+2,3,4,5		subtract 2
+2,5,9		use map
+
+🧠 Final takeaway
+Subtract only when nodes are continuous
+Otherwise, always use mapping.

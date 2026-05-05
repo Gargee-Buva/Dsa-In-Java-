@@ -26,8 +26,11 @@ public class BFS {
     public static void main(String[] args) {
         int n = 5;
 
-        List<List<Integer>> graph = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
+        List<List<Integer>> graph = new ArrayList<>(); /*1. Create graph in main()
+                                                         2. Fill it with data
+                                                         3. Pass it to bfs() */
+        // It creates an empty list for each node
+            for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
         }
 
@@ -37,7 +40,7 @@ public class BFS {
         graph.get(1).add(3);
         graph.get(1).add(4);
 
-        bfs(0, graph, n);
+        bfs(0, graph, n); 
     }
 }
 

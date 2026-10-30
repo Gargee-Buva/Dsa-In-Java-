@@ -1,6 +1,8 @@
+//add at last
 public class Create {
 
     // Step 1: Define a Node class
+    //A static nested class can be created without creating an object of the outer Create class.
     static class Node {
         int data;        // actual data that the node will hold
         Node next;       // reference to the next node
@@ -12,8 +14,9 @@ public class Create {
     }
 
     // Step 2: Define a LinkedList class
+    //Similarly, you can create a linked list without creating an object of Create.
     static class LinkedList {
-        Node head; // head of the list (first node)
+        Node head; // reference variable that contains memory address of first node obj
 
         // Step 3: Insert a new node at the end of the list
         public void insert(int data) {
@@ -23,12 +26,25 @@ public class Create {
                 head = newNode;
                 return;
             }
+            /*
+            Second node is created (20)
+
+            head, current
+                  |
+                  v
+            [10 | null]       [20 | null]
+
+            Now two separate nodes exist.
+            current still points to node 10.
+            current.next is still null.
+            newNode points to node 20   
+            */
 
             Node current = head;
             while (current.next != null) {
                 current = current.next;
             }
-
+            //Moves current to the next node.
             current.next = newNode;
         }
 

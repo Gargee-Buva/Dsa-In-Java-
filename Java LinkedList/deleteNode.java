@@ -33,8 +33,8 @@ public class deleteNode {
 
     public static void main(String args[]) {
         // Step 1: Create nodes
-        Node head = new Node(4);
-        head.next = new Node(5);
+        Node head = new Node(4); // head is reference 
+        head.next = new Node(5); // head.next — accesses the next field inside the object that head refers to.
         head.next.next = new Node(1);
         head.next.next.next = new Node(9);
 
